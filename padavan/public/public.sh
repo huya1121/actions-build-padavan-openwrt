@@ -57,7 +57,7 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config     # 删除配置项 网�
 
 # 科学
 echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  # SS plus+
-echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
+echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y" >> .config     # SS server
 
 #  代理
 echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config      # TUNSAFE
@@ -65,7 +65,7 @@ echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
 echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
 
 # 广告
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config       # adbyby plus+
+echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config       # adbyby plus+
 
 # DNS 有关
 echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
@@ -98,8 +98,3 @@ echo "CONFIG_FIRMWARE_INCLUDE_HTTPS=y" >> .config
 echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config
 #网易云解锁GO版本执行文件（4M多）注意固件超大小
 echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config
-
-##开启SS-Server
-echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=y"  >> .config
-##开启SS-Server
-
